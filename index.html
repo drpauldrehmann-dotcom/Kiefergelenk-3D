@@ -23,7 +23,8 @@ h1{font-size:clamp(24px,5vw,32px);font-weight:600;letter-spacing:-0.01em;margin:
 button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .stage{position:relative;background:var(--stage);border:1px solid var(--hair);border-radius:16px;overflow:hidden;aspect-ratio:4/3.4;max-height:72vh;width:100%;touch-action:none}
 .stage canvas{display:block;width:100%;height:100%}
-.lbl3{position:absolute;left:0;top:0;font-size:11px;font-weight:500;line-height:1.3;color:var(--ink);background:color-mix(in srgb,var(--panel) 88%,transparent);border:1px solid var(--hair);border-radius:6px;padding:2px 6px;white-space:nowrap;pointer-events:none;will-change:transform}
+.lbl3{position:absolute;left:0;top:0;font-size:11px;font-weight:500;line-height:1.3;color:var(--ink);background:color-mix(in srgb,var(--panel) 88%,transparent);border:1px solid var(--hair);border-radius:6px;padding:2px 6px;white-space:nowrap;pointer-events:auto;cursor:pointer;will-change:transform}
+.lbl3.on{background:#E49007;color:#fff;border-color:#E49007}
 .leaders{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
 .ldl{stroke:var(--muted);stroke-width:1;opacity:.85}
 .ldd{fill:#E49007;stroke:var(--panel);stroke-width:1}
@@ -134,7 +135,11 @@ tr.on td{background:var(--accent-soft)}
 <h3>Schließen</h3><p>M. masseter, M. temporalis und M. pterygoideus medialis. Die Pars posterior des M. temporalis zieht den Unterkiefer zurück (Retrusion); der Diskus wird dabei durch das elastische Stratum superius der bilaminären Zone zurückgeholt.</p>
 <h3>Protrusion und Laterotrusion</h3><p>Protrusion: beidseitige Aktivität des M. pterygoideus lateralis, unterstützt von M. masseter (Pars superficialis) und M. pterygoideus medialis. Laterotrusion (Mahlbewegung): auf der Balanceseite ziehen M. pterygoideus lateralis und medialis den Kondylus nach anterior-medial; auf der Arbeitsseite dreht sich der Kondylus und wird von der Pars posterior des M. temporalis gehalten.</p>
 <h3>Zugrichtungen des M. pterygoideus lateralis</h3><p>Caput superius: von der Crista infratemporalis der Ala major fast horizontal nach posterior-lateral zum Discus articularis und zur Kapsel. Caput inferius: von der Außenfläche der Lamina lateralis des Proc. pterygoideus schräg nach posterior-lateral-kranial zur Fovea pterygoidea am Proc. condylaris. Dargestellt ist die Lehrbuchfunktion; elektromyographische Studien zeigen für das Caput superius zusätzlich Aktivität beim Schließen und Pressen, wo es Diskus und Kondylus am Tuberculum stabilisiert.</p>
-<h3>Gelenkkapsel und Bänder</h3><p>Die weite, schlaffe Kapsel reicht vom Rand der Fossa mandibularis und dem Tuberculum articulare bis zum Collum mandibulae und ist mit dem Diskus verwachsen. Lateral verstärkt sie das Lig. laterale; Lig. stylomandibulare und Lig. sphenomandibulare liegen außerhalb der Kapsel und begrenzen die Bewegung. Über die Ebene „Gelenkkapsel &amp; Bänder“ einblendbar.</p>
+<h3>Gelenkkapsel und Bänder</h3><p>Die weite, schlaffe Kapsel reicht vom Rand der Fossa mandibularis und dem Tuberculum articulare bis zum Collum mandibulae und ist mit dem Diskus verwachsen. Lig. stylomandibulare und Lig. sphenomandibulare liegen außerhalb der Kapsel und begrenzen die Bewegung. Über die Ebene „Gelenkkapsel &amp; Bänder“ einblendbar.</p>
+<h3>Lig. laterale (Lig. temporomandibulare)</h3><p>Verstärkt die Kapsel lateral und besteht aus zwei Anteilen. Die äußere <b>Pars obliqua</b> zieht vom Tuberculum articulare schräg nach hinten unten zum Collum mandibulae; sie begrenzt die reine Rotation – spannt sie sich (etwa bei 20–25 mm Schneidekantendistanz), muss der Kondylus nach vorn translieren. Die innere <b>Pars horizontalis</b> verläuft fast waagrecht vom Tuberculum zum lateralen Kondylenpol und zum hinteren Diskusrand; sie begrenzt die Retrusion und schützt so die bilaminäre Zone.</p>
+<h3>Bilaminäre Zone</h3><p><b>Stratum superius</b> (gelb, elastische Fasern): vom posterioren Band zur Fissura petrotympanica; holt den Diskus beim Schließen zurück. <b>Stratum inferius</b> (weiß, straffe Kollagenfasern, kaum dehnbar): vom posterioren Band zum Hinterrand des Kondylus; verhindert, dass der Diskus zu weit nach vorn rotiert. Dazwischen lockeres, stark vaskularisiertes und innerviertes Bindegewebe (<b>Genu vasculosum</b>), das sich bei Mundöffnung mit Blut füllt und den frei werdenden Raum hinter dem Kondylus ausfüllt.</p>
+<h3>Knackphänomene – Einteilung</h3><p>Acht Phänomene, davon drei nicht diskusbedingt: <b>Lig.-laterale-Knacken</b>, <b>Diskus-/Knorpelhypertrophie</b> und <b>Kondylushypermobilität</b>. Fünf sind diskusbedingt, mit zunehmendem Ausmaß der Verlagerung: <b>Diskushypermobilität</b>, <b>partielle</b> und <b>totale Diskusverlagerung mit Reposition</b>, <b>Diskusverlagerung mit Adhäsion</b> und <b>Diskusverlagerung mit terminaler Reposition</b>. Die dynamischen Tests (Kompression extensiv, Translation, Kompression intensiv) ordnen sie den Gruppen 1–4 zu; Schlüssel aus Zeitpunkt / Intensität / Mundöffnung: Gruppe 1 gleich / leiser / normal, Gruppe 2 später / lauter / eingeschränkt, Gruppe 3 gleich / lauter / normal, Gruppe 4 Knacken ganz am Ende. Voraussetzung für eine Diskusverlagerung ist die Schädigung mindestens einer diskusstabilisierenden Struktur (Stratum inferius, Konvexität der Pars posterior, Stratum superius).</p>
+<p><i>Tipp:</i> Bei eingeblendeter Beschriftung eine Bezeichnung antippen – die Struktur wird farbig hervorgehoben; erneutes Antippen hebt die Markierung auf.</p>
 </section>
 <h2 class="ovh">Übersicht aller Varianten</h2>
 <div class="tablewrap"><table id="ov"><thead><tr><th>Variante</th><th>Bahn</th><th>Geräusch</th></tr></thead><tbody></tbody></table></div>
@@ -232,7 +237,39 @@ lat_r:{g:'Exkursion',t:'Laterotrusion nach rechts (Mahlbewegung)',snd:'–',
 lat_l:{g:'Exkursion',t:'Laterotrusion nach links (Mahlbewegung)',snd:'–',
  mech:'Links Arbeitsseite: der Kondylus dreht sich um eine annähernd senkrechte Achse mit kleiner Bennett-Bewegung nach lateral. Rechts Balanceseite: der Kondylus gleitet nach anterior-medial-kaudal (Bennett-Winkel ca. 15°). Antrieb: Mm. pterygoidei lateralis und medialis rechts, Pars posterior des M. temporalis links.',
  bef:'Seitschub um ca. 10 mm; Zahnkontakt nur links (Eckzahn- oder Gruppenführung).',
- abg:'Eine eingeschränkte Laterotrusion nach links spricht für eine Translationshemmung des rechten Gelenks, z. B. eine Diskusverlagerung ohne Reposition rechts.'}
+ abg:'Eine eingeschränkte Laterotrusion nach links spricht für eine Translationshemmung des rechten Gelenks, z. B. eine Diskusverlagerung ohne Reposition rechts.'},
+k_lig:{g:'Knacken',kl:'Nicht diskusbedingt · Gruppe 1',bahn:'gerade',t:'Lig.-laterale-Knacken',snd:'Knacken (Öffnen + Schließen)',caps:true,
+ mech:'Nicht diskusbedingt: Appositionen am lateralen Kondylenpol bzw. Sklerosierung/Kalzifizierung des Lig. laterale. Das Band springt beim Öffnen und beim Schließen über den lateralen Kondylenpol (im Modell: Pars obliqua und Pars horizontalis leuchten beim Knacken auf).',
+ bef:'Knacken beim Öffnen und Schließen ohne Bahnabweichung. Dynamische Kompression extensiv: Zeitpunkt gleich, Knacken leiser oder weg (weniger Spannung auf dem Ligament), Mundöffnung normal.',
+ abg:'Harmlos – keine Therapie nötig. Gegenüber der Diskushypermobilität (ebenfalls Gruppe 1) über die dynamische Kompression nach lateral bzw. medial: Knacken wird leise oder verschwindet → Lig. laterale; bleibt laut → Diskushypermobilität.'},
+k_hypertr:{g:'Knacken',kl:'Nicht diskusbedingt · Gruppe 3',bahn:'gerade, kurzes Stocken',t:'Diskushypertrophie / Knorpelhypertrophie',snd:'Knacken an gleicher Stelle',
+ mech:'Nicht diskusbedingt im Sinne einer Verlagerung: umschriebene Verdickung von Knorpel bzw. Diskus auf der Gelenkfläche (im Modell verdicktes posteriores Band). Der Kondylus muss beim Gleiten darüber hinweg.',
+ bef:'Knacken beim Öffnen und Schließen immer an derselben Stelle. Dynamische Kompression: Zeitpunkt gleich, Knacken lauter, Mundöffnung normal (Schlüssel Gruppe 3: gleich / lauter / normal).',
+ abg:'Gegenüber der Diskusverlagerung mit Adhäsion (ebenfalls Gruppe 3) abzugrenzen; gegenüber partieller und totaler Diskusverlagerung (Gruppe 2): dort wird das Knacken unter Kompression später und lauter, die Mundöffnung ist eingeschränkt.'},
+k_kondhyp:{g:'Knacken',kl:'Nicht diskusbedingt · Gruppe 4',bahn:'am Ende zur Gegenseite',t:'Kondylushypermobilität',snd:'spätes, dumpfes Knacken',
+ mech:'Nicht diskusbedingt: Der Kondylus-Diskus-Komplex gleitet bei maximaler Mundöffnung gemeinsam über das Tuberculum articulare hinaus und wieder zurück.',
+ bef:'Knacken ganz am Ende der Öffnung, große Mundöffnung, tastbare Delle vor dem Tragus. Gelingt die Rückkehr nicht, entsteht eine Kondylusluxation: der Mund geht plötzlich nicht mehr zu (Mundsperre).',
+ abg:'Gegenüber der Diskusverlagerung mit terminaler Reposition (ebenfalls Gruppe 4): geführte Inzisalbewegung – knackt es dabei, liegt eine DV mit terminaler Reposition vor, sonst nur die Kondylushypermobilität. Beides kann gleichzeitig bestehen.'},
+k_dh:{g:'Knacken',kl:'Diskusbedingt · Gruppe 1',bahn:'kaum Abweichung',t:'Diskushypermobilität',snd:'leises, frühes Knacken',
+ mech:'Beginnende Diskusverlagerung: nur die laterale Schicht des Diskus ist partiell oder vollständig nach anterior verlagert (im Modell lateraler Diskusanteil nach vorn gedreht). Der Kondylus springt früh wieder unter den lateralen Anteil.',
+ bef:'Frühes Knacken beim Öffnen, reziprok beim Schließen, kaum Bahnabweichung. Dynamische Kompression: Zeitpunkt gleich, Knacken leiser, Mundöffnung normal – die Kompression zentriert den Diskus, die minimale Verlagerung wird ausgeglichen.',
+ abg:'Gegenüber dem Lig.-laterale-Knacken (ebenfalls Gruppe 1) über Kompression nach lateral/medial: bleibt das Knacken laut → Diskushypermobilität. Das Ausmaß der Verlagerung nimmt von der Diskushypermobilität über die partielle zur totalen DV zu.'},
+k_pdv:{g:'Knacken',kl:'Diskusbedingt · Gruppe 2',bahn:'Abweichung bis zum Knacken',t:'Partielle Diskusverlagerung mit Reposition',snd:'Knacken + reziprokes Knacken',
+ mech:'Ein Teil des Diskus liegt vor dem Kondylus, meist anterior-medial rotiert (ca. 90 %, anterior-lateral ca. 10 %). Beim Öffnen springt der Kondylus unter das posteriore Band, beim Schließen gleitet der Diskus wieder ab.',
+ bef:'Knacken beim Öffnen mit Abweichung zur betroffenen Seite bis zum Knacken, reziprokes Knacken beim Schließen. Dynamische Kompression: Knacken später und lauter, Mundöffnung eingeschränkt (Schlüssel Gruppe 2: später / lauter / MÖE). Knackzeitpunkt initial, intermediär oder terminal.',
+ abg:'Prognose über den Knackzeitpunkt: früh = instabile Reposition (abgeflachte Pars posterior), gleiche Stelle = indifferente, spät = stabile Reposition (konvexe Pars posterior). Prognoseparameter: partielle DV (Stratum inferius), stabile Reposition (Pars posterior), initiale Reposition (Stratum superius).'},
+k_tdv:{g:'Knacken',kl:'Diskusbedingt · Gruppe 2',bahn:'deutliche Abweichung bis zum Knacken',t:'Totale Diskusverlagerung mit Reposition',snd:'lautes Knacken + reziprokes Knacken',
+ mech:'Der gesamte Diskus – alle drei Schichten (medial, zentral, lateral) – liegt vor dem Kondylus. Der Kondylus springt spät und deutlich hörbar unter das posteriore Band.',
+ bef:'Späteres, lauteres Knacken mit deutlicher Abweichung bis zum Knacken, reziprokes Knacken kurz vor Zahnkontakt. Dynamische Kompression: später / lauter / Mundöffnung eingeschränkt.',
+ abg:'Gegenüber der partiellen DV durch Ausmaß und Kompressionsverhalten; Übergang in die Diskusverlagerung ohne Reposition möglich (siehe Deflexion).'},
+k_adh:{g:'Knacken',kl:'Diskusbedingt · Gruppe 3',bahn:'leichte Abweichung, verkürzte Translation',t:'Diskusverlagerung mit Adhäsion',snd:'Knacken / Schleifen an gleicher Stelle',
+ mech:'Der verlagerte Diskus ist am Temporale fixiert und bleibt an Ort und Stelle; der Kondylus schleift beim Öffnen unter ihm hindurch.',
+ bef:'Translationseinschränkung; Knacken bzw. Schleifen immer an derselben Stelle (Schlüssel Gruppe 3: gleich / lauter / normal). Sicherung im MRT.',
+ abg:'Gegenüber der Diskushypertrophie (ebenfalls Gruppe 3); gegenüber der Adhärenz (temporäres Ankleben, einmaliger Ruck – siehe Deviation).'},
+k_term:{g:'Knacken',kl:'Diskusbedingt · Gruppe 4',bahn:'erst am Ende Abweichung',t:'Diskusverlagerung mit terminaler Reposition',snd:'Knacken ganz am Ende',
+ mech:'Der Diskus springt erst ganz am Ende der Mundöffnung auf den Kondylus; häufig bei hypermobilen Gelenken.',
+ bef:'Knacken ganz am Ende der Öffnung, reziprokes Knacken früh beim Schließen. Untersuchung mit geführter Inzisalbewegung: knackt es dabei → DV mit terminaler Reposition, wenn nicht → Kondylushypermobilität.',
+ abg:'Gegenüber der Kondylushypermobilität (ebenfalls Gruppe 4); beide können gemeinsam vorliegen.'}
 };
 
 let mode='normal',play=true,ph=0,last=null,cyc=0;
@@ -303,11 +340,31 @@ bilMat.opacity=0.5;bilMat.depthWrite=false;bilMatR.opacity=0.5;bilMatR.depthWrit
 const strSupMat=new THREE.MeshStandardMaterial({color:C(0xE8C46A),roughness:0.5,side:THREE.DoubleSide,polygonOffset:true,polygonOffsetFactor:-1});
 const strInfMat=new THREE.MeshStandardMaterial({color:C(0xF2EEE6),roughness:0.5,side:THREE.DoubleSide,polygonOffset:true,polygonOffsetFactor:-1});
 function makeRib(mat){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(NX*(NU+1)*3),3));const idx=[];const n=NU+1;for(let i=0;i<NX-1;i++)for(let j=0;j<n-1;j++){const a=i*n+j,b=a+1,c=a+n,d=c+1;idx.push(a,c,b,b,c,d);}g.setIndex(idx);const m=new THREE.Mesh(g,mat);scene.add(m);return m;}
-const strat={L:{sup:makeRib(strSupMat),inf:makeRib(strInfMat)},R:{sup:makeRib(strSupMat),inf:makeRib(strInfMat)}};
+const mkTex=(wavy,col)=>{const cv=document.createElement('canvas');cv.width=64;cv.height=128;const g=cv.getContext('2d');g.fillStyle='#fff';g.fillRect(0,0,64,128);g.strokeStyle=col;g.lineWidth=1.1;
+ for(let x=2;x<64;x+=4.5){g.beginPath();for(let y=0;y<=128;y+=2){const xx=x+(wavy?1.7*Math.sin(y*0.32+x*0.7):0);y?g.lineTo(xx,y):g.moveTo(xx,y);}g.stroke();}
+ const t=new THREE.CanvasTexture(cv);t.wrapS=t.wrapT=THREE.RepeatWrapping;t.encoding=THREE.sRGBEncoding;return t;};
+const strSupMat2=new THREE.MeshStandardMaterial({color:C(0xE6BF5C),map:mkTex(true,'rgba(120,70,0,0.45)'),roughness:0.5,side:THREE.DoubleSide});
+const strInfMat2=new THREE.MeshStandardMaterial({color:C(0xF5F2EA),map:mkTex(false,'rgba(110,100,90,0.35)'),roughness:0.4,side:THREE.DoubleSide});
+const SN=NU+1;
+function mkStrat(mat){const m=new THREE.Mesh(buildSheet({n:NX,m:SN}),mat);m.frustumCulled=false;scene.add(m);return m;}
+const strat={L:{sup:mkStrat(strSupMat2),inf:mkStrat(strInfMat2)},R:{sup:mkStrat(strSupMat2),inf:mkStrat(strInfMat2)}};
+const supPts=[],infPts=[];for(let i=0;i<NX*SN;i++){supPts.push(new THREE.Vector3());infPts.push(new THREE.Vector3());}
+const _ta=new THREE.Vector3(),_tb=new THREE.Vector3(),_tc=new THREE.Vector3();
+function fillThick(mesh,pts,n,m,th,hint){const pa=mesh.geometry.attributes.position.array;
+ for(let i=0;i<n;i++)for(let j=0;j<m;j++){const p=pts[i*m+j];
+  _ta.copy(pts[Math.min(n-1,i+1)*m+j]).sub(pts[Math.max(0,i-1)*m+j]);_tb.copy(pts[i*m+Math.min(m-1,j+1)]).sub(pts[i*m+Math.max(0,j-1)]);
+  _tc.crossVectors(_tb,_ta).normalize();if(_tc.dot(hint)<0)_tc.negate();
+  const u=i/(n-1),h=th*(0.55+0.45*Math.sqrt(Math.max(0,1-Math.pow(2*u-1,2))))*0.5;const a=(i*m+j)*3,b=(n*m+i*m+j)*3;
+  pa[a]=p.x+_tc.x*h;pa[a+1]=p.y+_tc.y*h;pa[a+2]=p.z+_tc.z*h;pa[b]=p.x-_tc.x*h;pa[b+1]=p.y-_tc.y*h;pa[b+2]=p.z-_tc.z*h;}
+ mesh.geometry.attributes.position.needsUpdate=true;mesh.geometry.computeVertexNormals();}
+// Genu vasculosum: Venenplexus im retrodiskalen Gewebe
+const VES={L:[],R:[]},VN=28,VCOL=[1,3,4,5,7];
+['L','R'].forEach(sd=>VCOL.forEach((c,q)=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(VN*3),3));
+ const l=new THREE.Line(g,new THREE.LineBasicMaterial({color:q%2?0x3B5BA5:0xA3243A}));l.frustumCulled=false;scene.add(l);VES[sd].push(l);}));
+const _P0s=[],_P1s=[],_P2s=[];for(let i=0;i<NX;i++){_P0s.push(new THREE.Vector3());_P1s.push(new THREE.Vector3());_P2s.push(new THREE.Vector3());}
 const q3=(a,b,c,t)=>a.clone().multiplyScalar((1-t)*(1-t)).add(b.clone().multiplyScalar(2*(1-t)*t)).add(c.clone().multiplyScalar(t*t));
 function updBil(side,disc){
  const sx=side==='L'?1:-1,m=bil[side],pa=m.geometry.attributes.position;const cen=[new THREE.Vector3(),new THREE.Vector3()];
- const sa=strat[side].sup.geometry.attributes.position,ia=strat[side].inf.geometry.attributes.position,n1=NU+1;
  for(let i=0;i<NX;i++){const xo=-7.5+15*i/(NX-1);
   const P0=new THREE.Vector3(sx*(50+xo),34.5,-41.5);
   const P1=disc.localToWorld(new THREE.Vector3(sx*xo,4.4,-4.3));
@@ -317,14 +374,20 @@ function updBil(side,disc){
   const c3=P2.clone().add(P0).multiplyScalar(0.5).add(new THREE.Vector3(0,0,-3.2));
   let j=0;
   for(let k=0;k<NU;k++,j++){const P=q3(P0,c1,P1,k/NU);pa.setXYZ(i*NS+j,P.x,P.y,P.z);}
-  for(let k=0;k<=NU;k++){const P=q3(P0,c1,P1,k/NU);P.y+=0.25;sa.setXYZ(i*n1+k,P.x,P.y,P.z);const Q=q3(P1,c2,P2,k/NU);Q.y-=0.25;ia.setXYZ(i*n1+k,Q.x,Q.y,Q.z);}
+  for(let k=0;k<=NU;k++){supPts[i*SN+k].copy(q3(P0,c1,P1,k/NU));supPts[i*SN+k].y+=0.7;infPts[i*SN+k].copy(q3(P1,c2,P2,k/NU));infPts[i*SN+k].y-=0.55;}
+  _P0s[i].copy(P0);_P1s[i].copy(P1);_P2s[i].copy(P2);
   for(let k=0;k<NLW;k++,j++){const P=q3(P1,c2,P2,k/NLW);pa.setXYZ(i*NS+j,P.x,P.y,P.z);}
   for(let k=0;k<NB;k++,j++){const P=q3(P2,c3,P0,k/NB);pa.setXYZ(i*NS+j,P.x,P.y,P.z);}
   if(i===0||i===NX-1){const c=cen[i?1:0];for(let k=0;k<NS;k++)c.add(new THREE.Vector3().fromBufferAttribute(pa,i*NS+k));c.multiplyScalar(1/NS);}
  }
  pa.setXYZ(NX*NS,cen[0].x,cen[0].y,cen[0].z);pa.setXYZ(NX*NS+1,cen[1].x,cen[1].y,cen[1].z);
  pa.needsUpdate=true;m.geometry.computeVertexNormals();
- sa.needsUpdate=true;ia.needsUpdate=true;strat[side].sup.geometry.computeVertexNormals();strat[side].inf.geometry.computeVertexNormals();
+ fillThick(strat[side].sup,supPts,NX,SN,1.3,new THREE.Vector3(0,1,0));fillThick(strat[side].inf,infPts,NX,SN,0.9,new THREE.Vector3(0,-1,0));
+ VCOL.forEach((ci,q)=>{const l=VES[side][q],a=l.geometry.attributes.position.array;
+  const S=_P1s[ci].clone().lerp(_P2s[ci],0.12).add(new THREE.Vector3(0,0.6,-0.8)),E=_P0s[ci].clone().lerp(_P2s[ci],0.55).add(new THREE.Vector3(0,0,-1.6));
+  const M=S.clone().lerp(E,0.5).add(new THREE.Vector3(0,0.6*(q%2?1:-1),-0.8));
+  for(let k=0;k<VN;k++){const t=k/(VN-1),P=q3(S,M,E,t);P.y+=0.45*Math.sin(t*Math.PI*5+q*1.7)*Math.sin(Math.PI*t);P.x+=sx*0.35*Math.cos(t*Math.PI*4+q);a[k*3]=P.x;a[k*3+1]=P.y;a[k*3+2]=P.z;}
+  l.geometry.attributes.position.needsUpdate=true;});
 }
 // ===== Muskulatur als Muskelkörper (Faserflächen/Stränge) =====
 const cl=x=>Math.max(0,Math.min(1,x));
@@ -503,11 +566,12 @@ function updCapsule(side){
 }
 const LIGS={
  lat:{n:3,m:8,th:1.8,b:0.3,tO:1,tI:1,hint:[1,0,0],O:[k2('F',[63.42,35.49,-25.03],[-62.86,35.61,-25.08]),k2('F',[64.53,35.65,-22.32],[-63.51,35.56,-22.86])],I:[k2('M',[56.43,23.47,-35.79],[-55.79,23.02,-35.65]),k2('M',[58.51,23.67,-33.74],[-58.03,23.22,-33.75])]},
+ latH:{n:3,m:8,th:1.5,b:0.3,tO:1,tI:1,hint:[1,0,0],O:[kF(61.4,32.9,-23.2),kF(61.8,32.4,-21.8)],I:[kM(58.2,30.2,-35.6),kM(58.6,28.6,-34.6)]},
  stylo:{n:3,m:8,th:1.2,b:0.5,tO:1,tI:1,hint:[1,0,0],O:[k2('F',[43.43,6.55,-41.54],[-42.63,6.51,-40.99]),k2('F',[43.43,6.55,-41.54],[-42.63,6.51,-40.99])],I:[k2('M',[46.90,-12.68,-16.67],[-47.04,-11.41,-16.79]),k2('M',[46.93,-8.04,-20.95],[-46.52,-7.99,-21.45])]},
  spheno:{n:3,m:8,th:1.1,b:0.5,tO:1,tI:1,hint:[-1,0,0],O:[k2('F',[35.79,24.10,-30.47],[-35.57,24.21,-30.69]),k2('F',[36.19,24.29,-30.62],[-36.14,24.19,-30.83])],I:[k2('M',[40.64,4.00,-7.00],[-40.40,4.00,-7.00]),k2('M',[41.59,6.00,-5.00],[-41.47,6.00,-5.00])]}
 };
 const LG={L:{},R:{}};
-['L','R'].forEach(side=>Object.keys(LIGS).forEach(k=>{const d=LIGS[k];d.relaxC=C(0xF2EFE6);const m=new THREE.Mesh(buildSheet(d),new THREE.MeshStandardMaterial({color:0xffffff,vertexColors:true,roughness:0.45,side:THREE.DoubleSide}));m.frustumCulled=false;scene.add(m);LG[side][k]=m;}));
+['L','R'].forEach(side=>Object.keys(LIGS).forEach(k=>{const d=LIGS[k];d.relaxC=C(0xF2EFE6);const m=new THREE.Mesh(buildSheet(d),new THREE.MeshStandardMaterial({color:0xffffff,vertexColors:true,roughness:0.45,side:THREE.DoubleSide,emissive:C(0xE49007),emissiveIntensity:0}));m.frustumCulled=false;scene.add(m);LG[side][k]=m;}));
 function updLigs(){['L','R'].forEach(side=>{if(!caps[side].visible)return;updCapsule(side);
  Object.keys(LIGS).forEach(k=>{const d=LIGS[k];MDEF['_lig']=d;MS[side]['_lig']={meshes:[LG[side][k]],anchorP:new THREE.Vector3(),pullAt:new THREE.Vector3(),pullDir:new THREE.Vector3()};updSheet(side,'_lig',0);});
  delete MDEF['_lig'];delete MS[side]['_lig'];});}
@@ -593,11 +657,11 @@ function setView(v){const[p,t]=VIEWS[v];camera.position.set(...p);controls.targe
 document.querySelectorAll('#views button').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.v)));
 setView('oblique');
 let showLabels=false;
-function setLabels(on){showLabels=on;document.querySelectorAll('.lbl3').forEach(e=>e.style.display=on?'':'none');
+function setLabels(on){if(!on&&typeof clearHL==='function')clearHL();showLabels=on;document.querySelectorAll('.lbl3').forEach(e=>e.style.display=on?'':'none');
  const chip=document.querySelector('#layers button[data-l="labels"]');chip.setAttribute('aria-pressed',on);
  const b=$('lblBtn');b.setAttribute('aria-pressed',on);b.textContent=on?'Beschriftung aus':'Beschriftung ein';}
 $('lblBtn').addEventListener('click',()=>setLabels(!showLabels));
-const LAY={temporal:[tL,tR],zygo:[zyg.L,zyg.R,zbL,zbR],squama:[sqL,sqR],hyoid:[hyoid],kau:[],supra:[hyoid],maxilla:[mxMesh,utMesh],muscle:[mus.L.sup,mus.L.inf,mus.R.sup,mus.R.inf],caps:[caps.L,caps.R,...Object.values(LG.L),...Object.values(LG.R)],bilam:[bil.L,bil.R,strat.L.sup,strat.L.inf,strat.R.sup,strat.R.inf]};
+const LAY={temporal:[tL,tR],zygo:[zyg.L,zyg.R,zbL,zbR],squama:[sqL,sqR],hyoid:[hyoid],kau:[],supra:[hyoid],maxilla:[mxMesh,utMesh],muscle:[mus.L.sup,mus.L.inf,mus.R.sup,mus.R.inf],caps:[caps.L,caps.R,...Object.values(LG.L),...Object.values(LG.R)],bilam:[...VES.L,...VES.R,bil.L,bil.R,strat.L.sup,strat.L.inf,strat.R.sup,strat.R.inf]};
 const CHIPLBL={masSup:'M. masseter – Pars superficialis',masDeep:'M. masseter – Pars profunda',tempA:'M. temporalis – Pars anterior',tempM:'M. temporalis – Pars media',tempP:'M. temporalis – Pars posterior',ptMed:'M. pterygoideus medialis',lpmSup:'M. pteryg. lat. – Caput superius',lpmInf:'M. pteryg. lat. – Caput inferius',digA:'M. digastricus – Venter anterior',digP:'M. digastricus – Venter posterior',mylo:'M. mylohyoideus',genio:'M. geniohyoideus',styl:'M. stylohyoideus'};
 const ORDER_K=['masSup','masDeep','tempA','tempM','tempP','ptMed','lpmSup','lpmInf'],ORDER_S=['digA','digP','mylo','genio','styl','hyoid'];
 function setMus(k,on){if(k==='hyoid'){setBone('hyoid',on);return;}else ['L','R'].forEach(sd=>MS[sd][k].meshes.forEach(m=>m.visible=on));
@@ -620,16 +684,17 @@ document.querySelectorAll('#layers button').forEach(b=>b.addEventListener('click
  else LAY[l].forEach(o=>o.visible=on);}));
 
 const KEYS=Object.keys(MODES);
-const GROUPS=[['Normal','Normal'],['Exkursion','Exkursion – Protrusion & Laterotrusion'],['Deviation','Deviation – kehrt zur Mitte zurück'],['Deflexion','Deflexion – bleibt zur betroffenen Seite'],['Gegenseite','Abweichung zur Gegenseite']];
-const BAHN={Normal:'gerade',Exkursion:'Vorschub / Seitschub',Deviation:'Abweichung, Rückkehr zur Mitte',Deflexion:'zur betroffenen Seite, keine Rückkehr',Gegenseite:'zur Gegenseite'};
+const GROUPS=[['Normal','Normal'],['Exkursion','Exkursion – Protrusion & Laterotrusion'],['Knacken','Knackphänomene – 8 Klassen'],['Deviation','Deviation – kehrt zur Mitte zurück'],['Deflexion','Deflexion – bleibt zur betroffenen Seite'],['Gegenseite','Abweichung zur Gegenseite']];
+const BAHN={Normal:'gerade',Exkursion:'Vorschub / Seitschub',Knacken:'je nach Ursache',Deviation:'Abweichung, Rückkehr zur Mitte',Deflexion:'zur betroffenen Seite, keine Rückkehr',Gegenseite:'zur Gegenseite'};
 const sel=$('modeSel');
 GROUPS.forEach(([g,label])=>{const og=document.createElement('optgroup');og.label=label;KEYS.filter(k=>MODES[k].g===g).forEach(k=>{const o=document.createElement('option');o.value=k;o.textContent=MODES[k].t;og.appendChild(o);});sel.appendChild(og);});
 const ORDER=[...sel.querySelectorAll('option')].map(o=>o.value);
 const tb=document.querySelector('#ov tbody');
-ORDER.forEach(k=>{const m=MODES[k];const tr=document.createElement('tr');tr.dataset.k=k;tr.innerHTML=`<td><button type="button">${m.t}</button></td><td>${BAHN[m.g]}</td><td>${m.snd}</td>`;tr.querySelector('button').addEventListener('click',()=>{setMode(k);$('stage').scrollIntoView({behavior:'smooth',block:'center'});});tb.appendChild(tr);});
+ORDER.forEach(k=>{const m=MODES[k];const tr=document.createElement('tr');tr.dataset.k=k;tr.innerHTML=`<td><button type="button">${m.t}</button></td><td>${m.bahn||BAHN[m.g]}</td><td>${m.snd}</td>`;tr.querySelector('button').addEventListener('click',()=>{setMode(k);$('stage').scrollIntoView({behavior:'smooth',block:'center'});});tb.appendChild(tr);});
 function deformTemporal(){const a=tR.geometry.attributes.position;for(let i=0;i<a.count;i++){const z=tR0[i*3+2];a.array[i*3+1]=tR0[i*3+1]+(mode==='emin'?extraR(z):0);}a.needsUpdate=true;tR.geometry.computeVertexNormals();}
 function setMode(k){mode=k;ph=0;cyc=0;tcount=0;sel.value=k;const m=MODES[k];
- $('eg').textContent=m.g==='Normal'?'Referenz':m.g==='Exkursion'?'Exkursionsbewegung':(m.g==='Gegenseite'?'Abweichung zur Gegenseite':m.g);$('es').textContent='Geräusch: '+m.snd;
+ if(m.caps&&typeof LAY!=='undefined'){LAY.caps.forEach(o=>o.visible=true);const cb=document.querySelector('#layers [data-l="caps"]');if(cb)cb.setAttribute('aria-pressed','true');}
+ $('eg').textContent=m.g==='Normal'?'Referenz':m.g==='Exkursion'?'Exkursionsbewegung':m.g==='Knacken'?'Knackphänomen · '+m.kl:(m.g==='Gegenseite'?'Abweichung zur Gegenseite':m.g);$('es').textContent='Geräusch: '+m.snd;
  $('eh').textContent=m.t;$('em').textContent=m.mech;$('eb').textContent=m.bef;$('ea').textContent=m.abg;
  document.querySelectorAll('#ov tr').forEach(r=>r.classList.toggle('on',r.dataset.k===k));deformTemporal();}
 sel.addEventListener('change',()=>setMode(sel.value));
@@ -642,6 +707,16 @@ setMode('normal');
 
 const mix=(a,b,k)=>a+(b-a)*k;
 // Diskusverlagerung mit Reposition: Kondylus schiebt Diskus vor, rutscht dann unter das posteriore Band
+function addwr2(opening,T,Tc,Tr,REL,YW){
+ const TILT=-0.05,f=REL/0.5;
+ if(opening){
+  if(T<Tc){const u=ss(0,Tc,T);return{p:0.5*T,rel:REL-0.14*u*f,tilt:TILT+0.12*u,sq:u*f,c:0,yw:YW};}
+  const k=ss(Tc,Tc+0.09,T),c=ss(Tc,Math.min(1,Tc+0.38),T);
+  return{p:0.5*T+0.5*T*c,rel:(REL-0.14*f)*(1-k),tilt:(TILT+0.12)*(1-k),sq:f*(1-k),c:(k>0.04&&k<0.96)?1:0,yw:YW*(1-k)};
+ }
+ const k=ss(Tr,Tr-0.08,T);
+ return{p:T*(1-0.15*k),rel:REL*k,tilt:TILT*k,sq:0,c:(k>0.04&&k<0.96)?1:0,yw:YW*k};
+}
 function addwr(opening,T,Tc,Tr){
  const REL=0.5,TILT=-0.05;
  if(opening){
@@ -655,7 +730,7 @@ function addwr(opening,T,Tc,Tr){
 function state(ph){
  const opening=ph<=1,oc=opening?ph:2-ph;
  const T=Math.pow(cl((oc-0.3)/0.7),1.2),Rr=Math.sin(oc*Math.PI/2);
- const s={o:Rr,pR:T,pL:T,relR:0,relL:0,tiltR:0,tiltL:0,sqR:0,sqL:0,lab:'',flash:'',yawOff:0,rollOff:0,pain:false,shift:0,ex:0,work:''};
+ const s={o:Rr,pR:T,pL:T,relR:0,relL:0,tiltR:0,tiltL:0,sqR:0,sqL:0,lab:'',flash:'',yawOff:0,rollOff:0,pain:false,shift:0,ex:0,work:'',ywR:0,ywL:0};
  const setR=r=>{s.pR=r.p;s.relR=r.rel;s.tiltR=r.tilt;s.sqR=r.sq;},setL=r=>{s.pL=r.p;s.relL=r.rel;s.tiltL=r.tilt;s.sqL=r.sq;};
  switch(mode){
  case 'dev_addr':{const r=addwr(opening,T,0.38,0.14);setR(r);if(r.c){s.lab=opening?'Knack':'reziprokes Knacken';s.flash='R';}break;}
@@ -679,6 +754,14 @@ function state(ph){
      if(lock>0.96)s.lab='Luxation – Mund bleibt offen';else if(lock>0.04){s.lab='Reposition';s.flash='R';}}
    break;}
  case 'hyperpl':{s.yawOff=0.06;s.rollOff=0.03;break;}
+ case 'k_lig':{if(Math.abs(T-0.45)<0.03){s.lab=opening?'Knack – Lig. laterale springt über den lateralen Pol':'Knack beim Schließen – Lig. laterale';s.flash='LIG';}break;}
+ case 'k_hypertr':{const b=Math.exp(-Math.pow((T-0.42)/0.07,2));s.pR=T-0.05*b;s.sqR=0.6;s.tiltR=0.08*b;if(Math.abs(T-0.43)<0.03){s.lab='Knack – immer an derselben Stelle';s.flash='R';}break;}
+ case 'k_kondhyp':{s.o=Rr*1.08;s.pL=1.02*T;s.pR=T+0.35*ss(0.8,0.97,T);if(s.pR>0.97&&s.pR<1.15){s.lab='Kondylus + Diskus über das Tuberculum';s.flash='R';}break;}
+ case 'k_dh':{const r=addwr2(opening,T,0.2,0.1,0.18,0.32);setR(r);s.ywR=r.yw;if(r.c){s.lab='leises Knacken';s.flash='R';}break;}
+ case 'k_pdv':{const r=addwr2(opening,T,0.38,0.14,0.32,0.4);setR(r);s.ywR=r.yw;if(r.c){s.lab=opening?'Knack':'reziprokes Knacken';s.flash='R';}break;}
+ case 'k_tdv':{const r=addwr2(opening,T,0.55,0.18,0.55,0);setR(r);if(r.c){s.lab=opening?'lautes Knacken':'reziprokes Knacken';s.flash='R';}break;}
+ case 'k_adh':{s.o=Rr*0.85;s.pR=0.6*T;s.relR=0.3-s.pR;s.tiltR=0.05;s.sqR=0.4;s.pL=0.85*T;if(Math.abs(s.pR-0.3)<0.025){s.lab='Knacken / Schleifen – Diskus bleibt fixiert';s.flash='R';}break;}
+ case 'k_term':{const r=addwr2(opening,T,0.86,0.8,0.42,0);setR(r);s.pR=r.p*(opening?1.05:1);s.o=Rr*1.04;if(r.c){s.lab=opening?'Knack ganz am Ende':'reziprokes Knacken';s.flash='R';}break;}
  case 'protr':{s.ex=oc;s.o=0.035*oc;s.pR=s.pL=0.68*oc;break;}
  case 'lat_r':{s.ex=oc;s.work='R';s.o=0.04*oc;s.pR=0;s.pL=0.62*oc;s.shift=-2.2*ss(0,0.35,oc);break;}
  case 'lat_l':{s.ex=oc;s.work='L';s.o=0.04*oc;s.pL=0;s.pR=0.62*oc;s.shift=2.2*ss(0,0.35,oc);break;}
@@ -687,10 +770,10 @@ function state(ph){
 }
 // Abstand Kondylusmitte–Fossa: posteriores Band (rest) -> Intermediärzone (Translation); ohne Diskus etwas höher
 const offC=p=>8.5-1.7*ss(0.1,0.65,Math.min(p,1));
-function placeDisc(g,sx,p,rel,tilt,sq){
+function placeDisc(g,sx,p,rel,tilt,sq,yw){
  const pd=p+rel,z=-34+14*pd;
  g.position.set(sx*50,fyS(sx,z)-offC(Math.max(pd,0)),z);
- g.rotation.set(mix(0,slope(sx,z)-0.6,ss(0.05,0.5,pd))+tilt,0,0);
+ g.rotation.set(mix(0,slope(sx,z)-0.6,ss(0.05,0.5,pd))+tilt,(sx<0?1:-1)*(yw||0),0);
  g.scale.set(1,1+0.12*sq,1-0.16*sq);
  g.updateMatrixWorld();
 }
@@ -704,9 +787,11 @@ const LBL=[
 ['Stratum superius',()=>{const g=strat.R.sup.geometry.attributes.position;return new THREE.Vector3().fromBufferAttribute(g,Math.floor(NX/2)*(NU+1)+Math.round(NU/2));},'joint','bilam'],
 ['Stratum inferius',()=>{const g=strat.R.inf.geometry.attributes.position;return new THREE.Vector3().fromBufferAttribute(g,Math.floor(NX/2)*(NU+1)+Math.round(NU/2));},'joint','bilam'],
 ['Bilaminäre Zone',()=>dR.localToWorld(new THREE.Vector3(0,2.5,-7.5)),'joint','bilam'],
+['Genu vasculosum (retrodiskales Gewebe)',()=>new THREE.Vector3().fromBufferAttribute(VES.R[2].geometry.attributes.position,14),'joint','bilam'],
 ['M. pteryg. lat. – Caput superius',()=>MS.R.lpmSup.anchor(),'joint','lpmSup'],
 ['Capsula articularis',()=>new THREE.Vector3().fromBufferAttribute(caps.R.geometry.attributes.position,4*CK),'joint','caps'],
-['Lig. laterale',()=>new THREE.Vector3().fromBufferAttribute(LG.R.lat.geometry.attributes.position,12),'joint','caps'],
+['Lig. laterale – Pars obliqua',()=>new THREE.Vector3().fromBufferAttribute(LG.R.lat.geometry.attributes.position,12),'joint','caps'],
+['Lig. laterale – Pars horizontalis',()=>new THREE.Vector3().fromBufferAttribute(LG.R.latH.geometry.attributes.position,12),'joint','caps'],
 ['M. pteryg. lat. – Caput inferius',()=>MS.R.lpmInf.anchor(),'joint','lpmInf'],
 [MDEF.masSup.short,()=>MS.R.masSup.anchor(),'mus','masSup'],
 [MDEF.masDeep.short,()=>MS.R.masDeep.anchor(),'mus','masDeep'],
@@ -743,6 +828,19 @@ const SVGNS='http://www.w3.org/2000/svg';const lsvg=document.createElementNS(SVG
 const lblEls=LBL.map(([t])=>{const e=document.createElement('div');e.className='lbl3';e.textContent=t;if(!showLabels)e.style.display='none';stage.appendChild(e);
  const ln=document.createElementNS(SVGNS,'line');ln.setAttribute('class','ldl');const dt=document.createElementNS(SVGNS,'circle');dt.setAttribute('r','2.6');dt.setAttribute('class','ldd');lsvg.appendChild(ln);lsvg.appendChild(dt);return{e,ln,dt,w:0};});
 const _v=new THREE.Vector3();
+const HLC=C(0xE49007);let hlIdx=-1,hlMeshes=[];
+function lblTargets(i){const t=LBL[i][0],lay=LBL[i][3];
+ const M={'Stratum superius':[strat.L.sup,strat.R.sup],'Stratum inferius':[strat.L.inf,strat.R.inf],'Bilaminäre Zone':[bil.L,bil.R],
+  'Genu vasculosum (retrodiskales Gewebe)':[...VES.L,...VES.R],'Capsula articularis':[caps.L,caps.R],'Lig. laterale – Pars obliqua':[LG.L.lat,LG.R.lat],
+  'Lig. laterale – Pars horizontalis':[LG.L.latH,LG.R.latH],'Lig. stylomandibulare':[LG.L.stylo,LG.R.stylo],'Lig. sphenomandibulare':[LG.L.spheno,LG.R.spheno],
+  'Fossa mandibularis':[tL,tR],'Tuberculum articulare':[tL,tR],'Discus articularis':[dL,dR],'Caput mandibulae':[mMesh]};
+ if(M[t])return M[t];if(lay&&BONES[lay])return BONES[lay].o;if(lay&&MDEF[lay])return[...MS.L[lay].meshes,...MS.R[lay].meshes];return[];}
+function clearHL(){hlMeshes.forEach(o=>{o.material=o.userData.m0;});hlMeshes=[];if(hlIdx>=0)lblEls[hlIdx].e.classList.remove('on');hlIdx=-1;}
+function setHL(i){const same=i===hlIdx;clearHL();if(same)return;hlIdx=i;lblEls[i].e.classList.add('on');
+ lblTargets(i).forEach(o=>o.traverse(m=>{if(!m.material)return;m.userData.m0=m.material;const c=m.material.clone();
+  if(c.isLineBasicMaterial)c.color=HLC.clone();else{c.emissive=HLC.clone();c.emissiveIntensity=0.6;c.color=c.color.clone().lerp(HLC,0.6);if(c.transparent)c.opacity=Math.max(c.opacity,0.7);}
+  m.material=c;hlMeshes.push(m);}));}
+lblEls.forEach((L,i)=>L.e.addEventListener('click',ev=>{ev.stopPropagation();setHL(i);}));
 function updLabels(){
  lsvg.style.display=showLabels?'':'none';if(!showLabels)return;
  const W=stage.clientWidth,H=stage.clientHeight;
@@ -771,12 +869,12 @@ function update(p,t){
  mand.position.copy(R.clone().add(L).multiplyScalar(0.5));
  mand.rotation.set(s.o*0.5,Math.atan2(R.z-L.z,dx)+s.yawOff,Math.asin(Math.max(-1,Math.min(1,dy/100)))+s.rollOff,'YZX');
  mand.updateMatrixWorld();
- placeDisc(dR,-1,s.pR,s.relR,s.tiltR,s.sqR);placeDisc(dL,1,s.pL,s.relL,s.tiltL,s.sqL);
+ placeDisc(dR,-1,s.pR,s.relR,s.tiltR,s.sqR,s.ywR);placeDisc(dL,1,s.pL,s.relL,s.tiltL,s.sqL,s.ywL);
  updBil('L',dL);updBil('R',dR);updMuscles(s,p,t);updLigs();
  const w=mand.localToWorld(incisal.clone());marker.position.copy(w);
  if(play&&tcount<TN){tpos[tcount*3]=w.x;tpos[tcount*3+1]=w.y;tpos[tcount*3+2]=w.z+0.8;tcount++;tg.setDrawRange(0,tcount);tg.attributes.position.needsUpdate=true;}
  if(s.lab)$('knack').textContent=s.lab;$('knack').style.opacity=s.lab?1:0;
- discMatR.emissiveIntensity=s.flash==='R'?0.75:0.06;discMatL.emissiveIntensity=s.flash==='L'?0.75:0.06;
+ discMatR.emissiveIntensity=s.flash==='R'?0.75:0.06;['lat','latH'].forEach(k=>{const m=LG.R[k];if(m&&!hlMeshes.includes(m))m.material.emissiveIntensity=s.flash==='LIG'?0.95:0;});discMatL.emissiveIntensity=s.flash==='L'?0.75:0.06;
  bilMatR.emissiveIntensity=s.pain?0.35+0.25*Math.sin(t/220):0;
  if(s.flash&&!wasClick&&play&&navigator.vibrate){try{navigator.vibrate(20);}catch(e){}}
  wasClick=!!s.flash;
@@ -788,7 +886,7 @@ const ease=x=>0.5-0.5*Math.cos(Math.PI*Math.max(0,Math.min(1,x)));
 function phFromCyc(u){if(u<1)return ease(u);if(u<1.25)return 1;if(u<2.25)return 1+ease(u-1.25);return 2;}
 function tick(t){
  if(play){if(last!==null){cyc+=(t-last)/(reduce?4200:2900);if(cyc>2.7){cyc=0;tcount=0;}}last=t;ph=phFromCyc(cyc);}
- update(Math.min(ph,2),t);controls.update();renderer.render(scene,camera);updLabels();requestAnimationFrame(tick);
+ update(Math.min(ph,2),t);if(hlMeshes.length){const k=0.4+0.35*Math.sin(t/170);hlMeshes.forEach(m=>{if(m.material.emissive)m.material.emissiveIntensity=k;});}controls.update();renderer.render(scene,camera);updLabels();requestAnimationFrame(tick);
 }
 {const l=$('loading');if(l)l.remove();}
 requestAnimationFrame(tick);
